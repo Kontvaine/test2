@@ -1,0 +1,25 @@
+mixin category(productLink, number, productHeadline, intro)
+	.col.md-4-12
+		a(href='' + productLink)
+			.categories__item
+				.number #{number}
+				h3 #{productHeadline}
+				p #{intro}
+
+
+mixin product(url, productHeadline, intro)
+	.col.md-3-12
+		a.products__item(href="#")
+			.img-box
+				img(src='' + url, alt='product varmepumper')
+				.overlay
+			h3 #{productHeadline}
+			p #{intro}
+
+
+mixin publication(publicationNumber, authorsAndTitle )
+	.row
+		.col-md-12
+			.publications__box.flex
+				.number #{publicationNumber}
+				p.p--smaller #{authorsAndTitle}

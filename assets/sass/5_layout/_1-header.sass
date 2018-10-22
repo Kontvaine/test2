@@ -1,0 +1,84 @@
+.flex
+  display: flex
+  flex-wrap: wrap
+	
+nav, ul, li
+	margin: 0
+	padding: 0
+
+	
+header
+	position: fixed
+	width: 100%
+	height: 100px	
+	border-bottom: 1px solid #DEDEDE
+	background-color: #FFFFFF
+	z-index: 2
+	  
+			
+	img
+			margin-top: 40px
+			width: 182px
+			height: 28px
+	nav
+		margin-left: 180px
+		margin-top: 38px
+	
+		ul
+		text-transform: uppercase
+
+	
+		li
+			justify-content: flex-start
+			list-style: none
+			a
+			 color: $color-primary
+			 font-family: $font-secondary
+			 font-weight: $bold
+			 //text-align: left
+			 margin-right: 77px	
+		li.categories
+			position: relative
+			.dropdown
+				display: none
+				margin-top: 43px
+				right: 10px
+				position: absolute
+				background-color: red
+				padding-left: 23px
+				li
+					padding: 10px 0 10px 0
+				//li:first-child
+					padding-top: 20px
+				
+				
+
+			&:before
+				position: absolute
+				content: ""
+				display: inline-block
+				width: 0.3em
+				height: 0.3em
+				border-right: 1px solid #797979
+				border-top: 1px solid #797979
+				transform: rotate(135deg)
+				margin: 5px 100px
+			&:hover .dropdown
+				display: block
+				
+			
+	span
+				color: $color-tertiary
+				font-family: $font-secondary
+				font-size: $body-font-size
+				font-weight: $bold
+				line-height: $body-line-height
+				margin-top: 38px
+				//margin-left: 650px
+				//align-self: flex-end
+				margin-left: auto
+		
+
+
+
+	
