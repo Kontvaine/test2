@@ -21,53 +21,90 @@ header
 			width: 182px
 			height: 28px
 	nav
-		margin-left: 180px
-		margin-top: 38px
+		margin-left: 100px
+		//margin-top: 38px
 	
-		ul
-		text-transform: uppercase
+		>ul
+			text-transform: uppercase
+			>li
+				justify-content: flex-start
+				list-style: none
+				//margin-right: 30px
+				position: relative
+		
+		  //&:after
+			  position: absolute
+			  content: ""
+			  display: inline-block
+			  right: 0
+			  width: 0.3em
+			  height: 0.3em
+			  border-right: 1px solid #797979
+			  border-top: 1px solid #797979
+			  transform: rotate(135deg)
+			  margin: 42px 100px
+		
+				a
+				 color: $color-primary
+				 font-family: $font-secondary
+				 font-weight: $bold	
+				 padding: 40px 50px 40px 50px
+				 //text-align: left
 
-	
-		li
-			justify-content: flex-start
-			list-style: none
-			a
-			 color: $color-primary
-			 font-family: $font-secondary
-			 font-weight: $bold
-			 //text-align: left
-			 margin-right: 77px	
-		li.categories
-			position: relative
-			.dropdown
-				display: none
-				margin-top: 43px
-				right: 10px
-				position: absolute
-				background-color: red
-				padding-left: 23px
-				li
-					padding: 10px 0 10px 0
-				//li:first-child
-					padding-top: 20px
-				
-				
 
-			&:before
-				position: absolute
-				content: ""
-				display: inline-block
-				width: 0.3em
-				height: 0.3em
-				border-right: 1px solid #797979
-				border-top: 1px solid #797979
-				transform: rotate(135deg)
-				margin: 5px 100px
-			&:hover .dropdown
-				display: block
-				
-			
-	span
+				ul.dropdown
+					display: none
+					position: absolute
+					//position: relative
+					margin-top: 1px
+					left: 0
+					transform: translateX(-0%)
+					background-color: $color-tertiary
+					// dariaus kodas
+					list-style: none
+					padding: 12px 0 20px 0
+					//margin: 5px 0 0 0
+					&:before
+						position: absolute
+						content: ""
+						width: 0;
+						height: 0
+						border-style: solid
+						border-width: 0 8px 10px 8px
+						border-color: transparent transparent $color-tertiary transparent
+						margin: -22px 45%
+						
+					li
+						position: relative
+
+						a 
+							color: #ffffff
+							display: block
+							padding: 12px 80px 12px 32px
+							display: inline-block
+							//margin-right: 85px
+							span
+								display: inline-block
+						&:after
+							position: absolute
+							content: ""
+							width: 0
+							height: 0
+							right: 0
+							border-style: solid
+							border-width: 8px 10px 8px 0
+							border-color: transparent #ffffff transparent transparent
+							margin-top: -25px 
+							display: none
+						&:hover span
+							transform: translateX(10px)
+					  &:hover a:after
+							display: block
+
+				&:hover .dropdown
+					display: block
+
+	span.number
 				color: $color-tertiary
 				font-family: $font-secondary
 				font-size: $body-font-size

@@ -427,7 +427,8 @@ p {
 
 a {
   text-decoration: none;
-  display: block; }
+  display: block;
+  font-size: 1em; }
 
 q {
   font-size: 1.5em; }
@@ -2349,45 +2350,68 @@ header {
     width: 182px;
     height: 28px; }
   header nav {
-    margin-left: 180px;
-    margin-top: 38px;
-    text-transform: uppercase; }
-    header nav li {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start;
-      list-style: none; }
-      header nav li a {
-        color: #323232;
-        font-family: "Cairo", sans-serif;
-        font-weight: 700;
-        margin-right: 77px; }
-    header nav li.categories {
-      position: relative; }
-      header nav li.categories .dropdown {
-        display: none;
-        margin-top: 43px;
-        right: 10px;
-        position: absolute;
-        background-color: red;
-        padding-left: 23px; }
-        header nav li.categories .dropdown li {
-          padding: 10px 0 10px 0; }
-      header nav li.categories:before {
-        position: absolute;
-        content: "";
-        display: inline-block;
-        width: 0.3em;
-        height: 0.3em;
-        border-right: 1px solid #797979;
-        border-top: 1px solid #797979;
-        -webkit-transform: rotate(135deg);
-        -ms-transform: rotate(135deg);
-        transform: rotate(135deg);
-        margin: 5px 100px; }
-      header nav li.categories:hover .dropdown {
-        display: block; }
-  header span {
+    margin-left: 100px; }
+    header nav > ul {
+      text-transform: uppercase; }
+      header nav > ul > li {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        list-style: none;
+        position: relative; }
+        header nav > ul > li a {
+          color: #323232;
+          font-family: "Cairo", sans-serif;
+          font-weight: 700;
+          padding: 40px 50px 40px 50px; }
+        header nav > ul > li ul.dropdown {
+          display: none;
+          position: absolute;
+          margin-top: 1px;
+          left: 0;
+          -webkit-transform: translateX(0%);
+          -ms-transform: translateX(0%);
+          transform: translateX(0%);
+          background-color: #EE2E24;
+          list-style: none;
+          padding: 12px 0 20px 0; }
+          header nav > ul > li ul.dropdown:before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 8px 10px 8px;
+            border-color: transparent transparent #EE2E24 transparent;
+            margin: -22px 45%; }
+          header nav > ul > li ul.dropdown li {
+            position: relative; }
+            header nav > ul > li ul.dropdown li a {
+              color: #ffffff;
+              display: block;
+              padding: 12px 80px 12px 32px;
+              display: inline-block; }
+              header nav > ul > li ul.dropdown li a span {
+                display: inline-block; }
+            header nav > ul > li ul.dropdown li:after {
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 0;
+              right: 0;
+              border-style: solid;
+              border-width: 8px 10px 8px 0;
+              border-color: transparent #ffffff transparent transparent;
+              margin-top: -25px;
+              display: none; }
+            header nav > ul > li ul.dropdown li:hover span {
+              -webkit-transform: translateX(10px);
+              -ms-transform: translateX(10px);
+              transform: translateX(10px);
+              display: block; }
+        header nav > ul > li:hover .dropdown {
+          display: block; }
+  header span.number {
     color: #EE2E24;
     font-family: "Cairo", sans-serif;
     font-size: 16px;
@@ -2411,7 +2435,7 @@ footer {
     -ms-flex-align: center;
     align-items: center; }
   footer nav {
-    margin-left: 225px; }
+    margin-left: 230px; }
     footer nav ul {
       text-transform: uppercase;
       margin-top: 38px;
@@ -2430,10 +2454,8 @@ footer {
           margin-right: 90px; }
   footer img {
     margin-top: 40px;
-    width: 50px;
-    height: 25px;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    margin-left: 5px;
+    height: 18px; }
   footer i, footer span {
     color: #797979;
     font-family: "PT Sans", sans-serif;
@@ -2443,11 +2465,8 @@ footer {
     text-align: right;
     margin-top: 38px; }
   footer i {
-    margin-left: 420px; }
-  footer span {
-    margin-rigth: auto; }
+    margin-left: 410px; }
   footer .vsbl {
-    display: inline-block;
     margin-left: auto; }
 
 #intro {
