@@ -30,8 +30,10 @@ $(document).ready(function(){
   dots: false,
   centerMode: true,
   focusOnSelect: true
+	
 });
 	
+
 
 		
 	console.log("end?")
