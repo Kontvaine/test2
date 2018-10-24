@@ -21,8 +21,22 @@ header
 			width: 182px
 			height: 28px
 	nav
-		margin-left: 100px
+		margin-left: 120px
 		//margin-top: 38px
+				li.categories
+				position: relative
+			li.categories:after
+				position: absolute
+				content: ""
+				display: block
+				right: 0
+				width: 0.3em
+				height: 0.3em
+				border-right: 1px solid #797979
+				border-top: 1px solid #797979
+				transform: rotate(135deg)
+				margin: -52px 35px	
+
 	
 		>ul
 			text-transform: uppercase
@@ -30,35 +44,21 @@ header
 				justify-content: flex-start
 				list-style: none
 				//margin-right: 30px
-				position: relative
-		
-		  //&:after
-			  position: absolute
-			  content: ""
-			  display: inline-block
-			  right: 0
-			  width: 0.3em
-			  height: 0.3em
-			  border-right: 1px solid #797979
-			  border-top: 1px solid #797979
-			  transform: rotate(135deg)
-			  margin: 42px 100px
-		
+				//position: relative
+
+
 				a
 				 color: $color-primary
 				 font-family: $font-secondary
 				 font-weight: $bold	
-				 padding: 40px 50px 40px 50px
-				 //text-align: left
-
+				 padding: 41px 39px 41px 39px
 
 				ul.dropdown
 					display: none
-					position: absolute
-					//position: relative
-					margin-top: 1px
+					position: relative
+					margin-top: 0px
 					left: 0
-					transform: translateX(-0%)
+					transform: translateX(-6%)
 					background-color: $color-tertiary
 					// dariaus kodas
 					list-style: none
@@ -67,7 +67,7 @@ header
 					&:before
 						position: absolute
 						content: ""
-						width: 0;
+						width: 0
 						height: 0
 						border-style: solid
 						border-width: 0 8px 10px 8px
@@ -75,34 +75,62 @@ header
 						margin: -22px 45%
 						
 					li
-						position: relative
+						//position: relative
+						.dropdown_content
+							position: absolute
+							display: none
+							width: 425px
+							//display: inline-block
+							//margin: -12px 17px
+							background-color: #ffffff
+							text-transform: none
+							padding: 53px 64px 50px 40px 
+							border: 1px solid #DEDEDE
+							//padaryti lygiavima su translate per 50%
+							
+							h3
+								margin: 0px
+
 
 						a 
 							color: #ffffff
 							display: block
 							padding: 12px 80px 12px 32px
-							display: inline-block
+							display: block
 							//margin-right: 85px
 							span
-								display: inline-block
-						&:after
-							position: absolute
-							content: ""
-							width: 0
-							height: 0
-							right: 0
-							border-style: solid
-							border-width: 8px 10px 8px 0
-							border-color: transparent #ffffff transparent transparent
-							margin-top: -25px 
-							display: none
-						&:hover span
-							transform: translateX(10px)
-					  &:hover a:after
+								display: block
+							&:after
+								position: absolute
+								content: ""
+								width: 0
+								height: 0
+								right: 0
+								border-style: solid
+								border-width: 8px 10px 8px 0
+								border-color: transparent #ffffff transparent transparent
+								margin-top: -25px 
+								display: none
+							&:hover span
+								transform: translateX(10px)
+							&:hover:after
+								display: block
+						&:hover .dropdown_content
 							display: block
-
+							left: 100%
+							top: 0
+							height: 100%
+			
+			
+				&:hover a
+					color: $color-tertiary
 				&:hover .dropdown
 					display: block
+				&:hover:after
+					border-right: 1px solid $color-tertiary
+					border-top: 1px solid $color-tertiary
+					transform: rotate(315deg)
+					
 
 	span.number
 				color: $color-tertiary

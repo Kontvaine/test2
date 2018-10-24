@@ -1,0 +1,11 @@
+		  &:after
+			  position: absolute
+			  content: ""
+			  display: inline-block
+			  right: 0
+			  width: 0.3em
+			  height: 0.3em
+			  border-right: 1px solid #797979
+			  border-top: 1px solid #797979
+			  transform: rotate(135deg)
+			  margin: 42px 100px
