@@ -1,0 +1,70 @@
+#intro
+	height: 560px
+	//height: calc(100vh - 100px)
+	//height: 100vh
+	position: relative 
+	margin-top: 100px
+	.intro__slider 
+		//sulygiuoti per centra #intro konteineryje
+		position: relative
+		top: 50%
+		transform: translatey(-50%)
+
+	.item__info
+		margin-top: 35px
+
+	h1
+	  font-size: 3.5em
+	  position: relative
+	  color: $color-tertiary
+	  font-weight: $semi-bold
+	  margin: 0
+	p
+		font-family: $font-secondary
+		font-weight: $semi-bold
+		font-size: 1.5em
+		margin: 0
+	
+	.intro__slider__controls
+		
+		position: absolute
+		width: 100%
+		//cia width skaiciuojama nuo parent, t.y.#intro, konteinerio plocio
+		//bottom: 135px
+		bottom: 24%
+	
+		//background: blue
+		display: inline-block
+		vertical-align: middle
+		.arrows
+			align-items: center
+			width: 240px
+			flex-direction: row
+			//margin-left: 25px
+			span
+				font-weight: $bold
+				font-size: 1em	
+				margin: 0 43px 0 43px
+		.slider__more_info
+			margin-left: 120px
+			span
+				color: #797979
+		
+		.prev-slide, .next-slide
+			color: rgba(121,121,121, 0.4)
+			font-size: 0.7em
+			padding: 17px
+			border: 1px solid rgba(121,121,121, 0.4)
+			border-radius: 50%
+			
+
+		.prev-slide
+			//margin-right: 48px
+			&:hover
+				cursor: pointer
+				color: $color-tertiary
+		.next-slide
+			//margin-left: 48px
+			&:hover
+				cursor: pointer
+				color: $color-tertiary

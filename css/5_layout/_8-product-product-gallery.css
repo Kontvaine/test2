@@ -1,0 +1,8 @@
+.gallery__slider {
+  width: 100px;
+  height: 150p;
+  margin: 30px auto 1px;
+  overflow: hidden; }
+  .gallery__slider img {
+    width: 10%;
+    min-height: 10%; }

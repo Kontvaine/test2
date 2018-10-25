@@ -1,0 +1,160 @@
+.flex
+  display: flex
+  flex-wrap: wrap
+	
+nav, ul, li
+	margin: 0
+	padding: 0
+
+	
+header
+	position: fixed
+	width: 100%
+	height: 100px	
+	border-bottom: 1px solid #DEDEDE
+	background-color: #FFFFFF
+	z-index: 2
+	  
+			
+	img
+			margin-top: 40px
+			width: 182px
+			height: 28px
+	nav
+		margin-left: 120px
+		//margin-top: 38px
+		li.categories
+			position: relative
+
+
+	
+		>ul
+			text-transform: uppercase
+
+			>li
+				justify-content: flex-start
+				list-style: none
+				//margin-right: 30px
+				li.categories
+					position: relative
+		
+
+				&:after
+					position: absolute
+					content: ""
+					display: block
+					right: 0
+					width: 0.3em
+					height: 0.3em
+					border-right: 1px solid #797979
+					border-top: 1px solid #797979
+					transform: rotate(135deg)
+					margin: -52px 35px	
+
+
+				a
+				 color: $color-primary
+				 font-family: $font-secondary
+				 font-weight: $bold	
+				 padding: 41px 39px 41px 39px
+
+				ul.dropdown
+					display: none
+					position: relative
+					//position: absolute
+					margin-top: 0px
+					left: 0
+					//transform: translateX(138%)
+					background-color: $color-tertiary
+					// dariaus kodas
+					list-style: none
+					padding: 12px 0 20px 0
+					//margin: 5px 0 0 0
+					&:before
+						position: absolute
+						content: ""
+						width: 0
+						height: 0
+						border-style: solid
+						border-width: 0 8px 10px 8px
+						border-color: transparent transparent $color-tertiary transparent
+						margin: -22px 45%
+						
+					li
+						//position: relative
+						.dropdown_content
+							position: absolute
+							display: none
+							left: 100%
+							top: 0
+							height: 100%
+							width: 425px
+							background-color: #ffffff
+							text-transform: none
+							border: 1px solid #DEDEDE
+							padding: 53px 64px 50px 40px
+							//dropdown_content_inside
+								position: relative
+    						top: 50%
+								transform: translatex(-50%)
+								 
+							//padaryti lygiavima su translate su 50%
+							
+							h3
+								margin: 0px
+
+
+
+						a 
+							color: #ffffff
+							display: block
+							padding: 12px 80px 12px 32px
+							display: block
+							//margin-right: 85px
+							span
+								display: block
+							&:after
+								position: absolute
+								content: ""
+								width: 0
+								height: 0
+								right: 0
+								border-style: solid
+								border-width: 8px 10px 8px 0
+								border-color: transparent #ffffff transparent transparent
+								margin-top: -25px 
+								opacity: 0
+							&:hover span
+								transform: translateX(10px)
+							&:hover:after
+								opacity: 1
+						&:hover .dropdown_content
+							display: block
+
+			
+			
+				&:hover a
+					color: $color-tertiary
+				&:hover .dropdown
+					display: block
+				&:hover:after
+					border-right: 1px solid $color-tertiary
+					border-top: 1px solid $color-tertiary
+					transform: rotate(315deg)
+					
+
+	span.number
+				color: $color-tertiary
+				font-family: $font-secondary
+				font-size: $body-font-size
+				font-weight: $bold
+				line-height: $body-line-height
+				margin-top: 38px
+				//margin-left: 650px
+				//align-self: flex-end
+				margin-left: auto
+		
+
+
+
+	
