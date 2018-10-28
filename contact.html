@@ -72,7 +72,7 @@
       <section id="contact-intro">
         <div class="grid">
           <div class="row row--no-gutter"> 
-            <div class="col md-3-12"><a href="#"><span>Mandag – Fredag: 07:00 – 15:00</span></a></div>
+            <div class="col md-3-12"><span>Mandag – Fredag: 07:00 – 15:00</span></div>
             <div class="col md-6-12">
               <h1>Kontakt oss</h1>
               <div class="row row--no-gutter"> 
@@ -100,44 +100,71 @@
         <div class="grid">
           <div class="row row--no-gutter"> 
             <div class="col md-6-12 md-push-left-3-12">
-              <h3>feedback</h3>
+              <h3>Feedback</h3>
             </div>
           </div>
           <div class="row row--no-gutter"> 
             <div class="col md-6-12 md-push-left-3-12">
-              <form method="POST" enctype="multipart/form-data">
-                <div class="row row--no-gutter"> 
-                  <div class="col md-12-12">
-                    <label for="first-name">First name</label>
-                    <input type="text" name="name" placeholder="">
-                    <label for="last-name">Last name</label>
-                    <input type="text" name="surname" placeholder="">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" placeholder="">
-                    <label for="Subject">Subject</label>
-                    <input type="text" name="subject" placeholder="">
+              <form method="POST" enctype="multipart/form-data"></form>
+              <div class="row row--no-gutter">
+                <div class="col md-6-12">
+                  <label for="email"> First name</label>
+                  <input type="text" name="email" placeholder="">
+                  <label for="email"> Email</label>
+                  <input type="text" name="email" placeholder="">
+                </div>
+                <div class="col md-6-12">
+                  <label for="email"> Last name</label>
+                  <input type="text" name="email" placeholder="">
+                  <label for="email"> Subject</label>
+                  <input type="text" name="email" placeholder="">
+                </div>
+              </div>
+              <div class="row row--no-gutter">
+                <div class="col md-12-12">
+                  <label for="subject">Your message (Max 300 symbols)</label>
+                  <textarea type="text" name="subject"></textarea>
+                </div>
+              </div>
+              <div class="row row--no-gutter">
+                <div class="col md-6-12">
+                  <input class="btn btn--primary" type="submit" value="Send message">
+                </div>
+              </div>
+              <div class="row row--no-gutter">
+                <div class="col md-12-12">
+                  <div class="contact-form__additional">
+                    <p>Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory compaq laptop battery compaq laptop battery charger compaq laptop computer </p>
                   </div>
                 </div>
-                <textarea name="subject" placeholder=""></textarea>
-                <input class="btn btn--primary" type="submit" value="send message">
-              </form>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!--					-->
-      <!--					form(method='POST', enctype='multipart/form-data')-->
-      <!--  .name-and-email.flex-->
-      <!--    .container-name.flex-->
-      <!--      label(for='email')  Your name-->
-      <!--      input#email(type='text', name='email', placeholder='')-->
-      <!--    .container-name.flex-->
-      <!--      label(for='email')  Your email-->
-      <!--      input#email(type='text', name='email', placeholder='')-->
-      <!--  .container-name.message.flex-->
-      <!--    label(for='subject') Your message-->
-      <!--    textarea#subject(rows='10', cols='50', name='subject')-->
-      <!--  input(type='submit', value='Send message')-->
+      <!--				form(method='POST', enctype='multipart/form-data')-->
+      <!--					.first_row-->
+      <!--						.contact-form__name.inline-->
+      <!--							label(for='first-name') First name-->
+      <!--							input(type='text', name='name', placeholder='')-->
+      <!--						.contact-form__surname.inline.right-->
+      <!--							label(for='last-name') Last name-->
+      <!--							input(type='text', name='surname', placeholder='')-->
+      <!--							-->
+      <!--					.second_row-->
+      <!--						.contact-form__email.inline-->
+      <!---->
+      <!--							label(for='email') Email-->
+      <!--							input(type='email', name='email', placeholder='')-->
+      <!--						.contact-form__subject.inline.right-->
+      <!--							label(for='Subject') Subject-->
+      <!--							input(type='text', name='subject', placeholder='')-->
+      <!--					.message-->
+      <!---->
+      <!--						label(for='Subject') Message (Max 300 symbols)-->
+      <!--						textarea( name='subject', placeholder='')-->
+      <!---->
+      <!--					input.btn.btn--primary(type='submit', value='send message') -->
       <section id="cta">
         <div class="grid">
           <div class="row row--no-gutter"> 
