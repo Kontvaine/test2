@@ -2773,6 +2773,11 @@ footer {
     -o-transition: 0.5s;
     transition: 0.5s; }
 
+#product-order-form {
+  display: none; }
+  #product-order-form .btn--primary {
+    margin: 40px 0 40px 0; }
+
 #contact-intro {
   margin-top: 180px; }
   #contact-intro .line {
@@ -2784,7 +2789,35 @@ footer {
     font-family: "Cairo", sans-serif;
     font-size: 1.5em; }
 
+#contact-form h3 {
+  margin-bottom: 20px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 600; }
+
+#contact-form p {
+  color: #797979; }
+
+#contact-form .contact-form__additional {
+  width: 95%;
+  margin: 40px 0 80px 0; }
+
 input, label {
-  display: inline-block; }
+  display: block; }
+
+label {
+  color: #797979; }
+
+input:not(.btn) {
+  height: 55px;
+  width: 90%;
+  margin: 5px 0 24px 0;
+  border: 1px solid #DEDEDE;
+  background-color: transparent; }
+
+textarea {
+  width: 95%;
+  height: 55px;
+  margin: 5px 0 40px 0;
+  border: 1px solid #DEDEDE; }
 
 /*# sourceMappingURL=style.css.map */
