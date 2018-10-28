@@ -77,7 +77,7 @@
               <h1>Zen Designmodell Sort</h1>
               <p>ZEN combines elegance, design and the latest in technology - fits perfectly into your home and is designed for Nordic conditions.</p>
             </div>
-            <div class="col md-3-12"><a class="btn btn--primary" href="#">make order</a></div>
+            <div class="col md-3-12"><a class="btn btn--primary order" href="#">make order</a></div>
           </div>
         </div>
       </section>
@@ -155,9 +155,47 @@
               <div id="product-info__specs">
                 <h3 class="uk-accordion-title">Spesifikasjoner</h3>
                 <div class="info__more__content">
-                  <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
-                  <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna						</p>
-                  <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.</p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                        <th> </th>
+                      </tr>
+                    </thead>
+                    <tfoot>
+                      <tr>
+                        <td colspan="4"> </td>
+                      </tr>
+                    </tfoot>
+                    <tbody>
+                      <tr>
+                        <td>Hoved</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Laveste lydnivå</td>
+                        <td> 21 db (A) </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>Maks kapasitet ved +7 grader</td>
+                        <td>5,5 kW </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>SCOP</td>
+                        <td>4,5</td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -202,16 +240,16 @@
         </div>
       </section>
       <!--product order form-->
-      <section id="product-order-form">
+      <section id="popup-order-form">
         <div class="grid">
           <div class="row row--no-gutter"> 
-            <div class="col md-6-12 md-push-left-3-12">
-              <h1>Order</h1>
+            <div class="col md-10-12 md-push-left-1-12">
+              <h1>Order</h1><a class="order-form_close" href="#">X</a>
               <h3>Zen Designmodell Sort</h3>
             </div>
           </div>
           <div class="row row--no-gutter"> 
-            <div class="col md-6-12 md-push-left-3-12">
+            <div class="col md-10-12 md-push-left-1-12">
               <form method="POST" enctype="multipart/form-data">
                 <div class="row row--no-gutter">
                   <div class="col md-6-12">
