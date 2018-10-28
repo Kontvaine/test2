@@ -15,6 +15,19 @@ header
 	background-color: #FFFFFF
 	z-index: 2
 	  
+	li.categories:after
+		position: absolute
+		content: ""
+		display: block
+		right: 0
+		width: 0.3em
+		height: 0.3em
+		border-right: 1px solid #797979
+		border-top: 1px solid #797979
+		transform: rotate(135deg)
+		top: 45%
+		right: 13%
+		//margin: -52px 35px
 			
 	img
 			margin-top: 40px
@@ -37,22 +50,11 @@ header
 				position: relative
 				//margin-right: 30px
 				li.categories
-					position: absolute
+					position: relative
 					
 
-				//&:after
-					position: absolute
-					content: ""
-					display: block
-					right: 0
-					width: 0.3em
-					height: 0.3em
-					border-right: 1px solid #797979
-					border-top: 1px solid #797979
-					transform: rotate(135deg)
-					margin: -52px 35px
-					
 
+					
 
 				a
 				 color: $color-primary

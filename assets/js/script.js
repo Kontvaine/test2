@@ -82,18 +82,55 @@ $(document).ready(function(){
   });
   } );
 	
+//	
+//			$( function() {
+//    $( "#product-info__more" ).accordion({
+//      collapsible: true,
+//			heightStyle: "content",
+//			active: false
+//    }).on("click", "h3.ui-accordion-header", function(e) {
+//    $("h3.ui-accordion-header").each(function(i, el) {
+//     $(this).find(".panel-icon").text($(el).is(".ui-state-active") ? "-" : "+")
+//    })
+//  });
+//  } );
+
+$( ".order" ).click(function(){
 	
-			$( function() {
-    $( "#product-info__more" ).accordion({
-      collapsible: true,
-			heightStyle: "content",
-			active: false
-    }).on("click", "h3.ui-accordion-header", function(e) {
-    $("h3.ui-accordion-header").each(function(i, el) {
-     $(this).find(".panel-icon").text($(el).is(".ui-state-active") ? "-" : "+")
-    })
-  });
-  } );
+	//Fade in the Popup
+    $("#popup-order-form").fadeIn(300);
+
+    
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(300);
+		return false;
+	
+});
+	
+	
+	
+	
+	
+	// When clicking on the button close or the mask layer the popup closed
+$('.order-form_close').click(function(){
+  $('#popup-order-form').fadeOut(300);
+	$('#mask').fadeOut(300); 
+
+return false;
+});
+//	
+//	// When clicking on the button close or the mask layer the popup closed
+//$('.order-form_close, #mask').live('click', function() { 
+//  $('#mask, #popup-order-form').fadeOut(300 , function() {
+//    $('#mask').remove();  
+//}); 
+//return false;
+//});
+	
+	
+	
+	
 
 
 

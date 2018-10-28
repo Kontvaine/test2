@@ -2348,6 +2348,20 @@ header {
   border-bottom: 1px solid #DEDEDE;
   background-color: #FFFFFF;
   z-index: 2; }
+  header li.categories:after {
+    position: absolute;
+    content: "";
+    display: block;
+    right: 0;
+    width: 0.3em;
+    height: 0.3em;
+    border-right: 1px solid #797979;
+    border-top: 1px solid #797979;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    top: 45%;
+    right: 13%; }
   header img {
     margin-top: 40px;
     width: 182px;
@@ -2363,7 +2377,7 @@ header {
         list-style: none;
         position: relative; }
         header nav > ul > li li.categories {
-          position: absolute; }
+          position: relative; }
         header nav > ul > li a {
           color: #323232;
           font-family: "Cairo", sans-serif;
@@ -2739,8 +2753,29 @@ footer {
   #product-info .uk-accordion-title.ui-state-active:after {
     float: right;
     color: #797979;
+    font-size: 14px;
     content: "\2796";
     font-size: 14px; }
+
+table {
+  width: 100%; }
+
+.Title {
+  display: table-caption;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger; }
+
+.Heading {
+  display: table-row;
+  font-weight: bold;
+  text-align: center; }
+
+.Row {
+  display: table-row; }
+
+td {
+  padding-right: 160px; }
 
 #similar-products h2 {
   font-size: 2.5em;
@@ -2773,10 +2808,52 @@ footer {
     -o-transition: 0.5s;
     transition: 0.5s; }
 
-#product-order-form {
-  display: none; }
-  #product-order-form .btn--primary {
-    margin: 40px 0 40px 0; }
+#popup-order-form h1 {
+  margin-top: 40px; }
+
+#popup-order-form h3 {
+  margin-bottom: 40px; }
+
+#popup-order-form p {
+  color: #797979; }
+
+#popup-order-form .btn--primary {
+  margin: 40px 0 40px 0; }
+
+#popup-order-form .order-form_close {
+  float: right;
+  color: #797979;
+  font-size: 14px;
+  padding: 15px 18px 15px 18px;
+  border: 1px solid rgba(121, 121, 121, 0.4);
+  border-radius: 50%;
+  display: block;
+  -webkit-transform: translatey(-10px);
+  -ms-transform: translatey(-10px);
+  transform: translatey(-10px); }
+
+#mask {
+  display: none;
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 999; }
+
+#popup-order-form {
+  display: none;
+  background: #ffffff;
+  padding: 10px;
+  font-size: 1.2em;
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  right: 20%;
+  z-index: 99999; }
 
 #contact-intro {
   margin-top: 180px; }
