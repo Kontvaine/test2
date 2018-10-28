@@ -1,0 +1,26 @@
+#product-info {
+  margin-top: 75px; }
+  #product-info ul {
+    color: #797979;
+    margin-top: 60px; }
+    #product-info ul li {
+      padding: 5px 0 5px 0; }
+  #product-info #product-info__more {
+    padding-bottom: 65px;
+    position: relative;
+    padding-right: 40px; }
+    #product-info #product-info__more .panel-icon {
+      position: absolute;
+      right: -40px;
+      padding: 8px 16px 8px 16px;
+      border: 1px solid #DEDEDE;
+      border-radius: 50%; }
+  #product-info #product-info__specs {
+    margin: 55px 0 85px 0;
+    position: relative; }
+    #product-info #product-info__specs .panel-icon {
+      position: absolute;
+      right: -40px;
+      padding: 8px 16px 8px 16px;
+      border: 1px solid #DEDEDE;
+      border-radius: 50%; }

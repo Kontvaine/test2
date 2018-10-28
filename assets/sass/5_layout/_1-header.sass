@@ -23,28 +23,35 @@ header
 	nav
 		margin-left: 120px
 		//margin-top: 38px
-				li.categories
-				position: relative
-			li.categories:after
-				position: absolute
-				content: ""
-				display: block
-				right: 0
-				width: 0.3em
-				height: 0.3em
-				border-right: 1px solid #797979
-				border-top: 1px solid #797979
-				transform: rotate(135deg)
-				margin: -52px 35px	
+		//li.categories
+			position: relative
+
 
 	
 		>ul
 			text-transform: uppercase
+
 			>li
 				justify-content: flex-start
 				list-style: none
+				position: relative
 				//margin-right: 30px
-				//position: relative
+				li.categories
+					position: absolute
+					
+
+				//&:after
+					position: absolute
+					content: ""
+					display: block
+					right: 0
+					width: 0.3em
+					height: 0.3em
+					border-right: 1px solid #797979
+					border-top: 1px solid #797979
+					transform: rotate(135deg)
+					margin: -52px 35px
+					
 
 
 				a
@@ -54,11 +61,11 @@ header
 				 padding: 41px 39px 41px 39px
 
 				ul.dropdown
-					display: none
-					position: relative
+					visibility: hidden
+					position: absolute
 					margin-top: 0px
 					left: 0
-					transform: translateX(-6%)
+					//transform: translateX(138%)
 					background-color: $color-tertiary
 					// dariaus kodas
 					list-style: none
@@ -117,11 +124,11 @@ header
 								border-width: 8px 10px 8px 0
 								border-color: transparent #ffffff transparent transparent
 								margin-top: -25px 
-								display: none
+								opacity: 0
 							&:hover span
 								transform: translateX(10px)
 							&:hover:after
-								display: block
+								opacity: 1
 						&:hover .dropdown_content
 							display: block
 
@@ -130,7 +137,7 @@ header
 				&:hover a
 					color: $color-tertiary
 				&:hover .dropdown
-					display: block
+					visibility: visible
 				&:hover:after
 					border-right: 1px solid $color-tertiary
 					border-top: 1px solid $color-tertiary

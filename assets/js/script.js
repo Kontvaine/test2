@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	console.log("done?")
 
-	
+	//Slick sliders index
 	
 	$('.intro__slider').slick({
   dots: false,
@@ -13,7 +13,7 @@ $(document).ready(function(){
   nextArrow: $('.next-slide'),	
 });
 	
-	
+	//Slick sliders categories
 	
 	$('.gallery__slider').slick({
   slidesToShow: 1,
@@ -34,37 +34,43 @@ $(document).ready(function(){
 	
 });
 	
-//	$( function() {
-//    $( "#product-info__more" ).accordion({
-//			
-//			collapsible: true,
-//			heightStyle: "content",
-//			icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
-//			
-//    });
-//			var icons = $( "#product-info__more" ).accordion( "option", "icons" );
-// 
-//// Setter
-//		$( "#product-info__more" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
-//  });
+	
+	
+	
+	
 	
 	//ACCORDION
 	
-	$( "#product-info__more" ).accordion({
+	$( function() {
+    $( "#product-info__more" ).accordion({
+			
+			collapsible: true,
+			active: true,
+			heightStyle: "content",
+			//icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+			
+    });
+			//var icons = $( "#product-info__more" ).accordion( "option", "icons" );
+ 
+// Setter
+//		$( "#product-info__more" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
+  });
+	
+	
+		
+	$( "#product-info__specs" ).accordion({
 
 			collapsible: true,
 			heightStyle: "content",
-			icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+			//icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
 	});
 
-	var icons = $( "#product-info__more" ).accordion( "option", "icons" );
+	//var icons = $( "#product-info__more" ).accordion( "option", "icons" );
 
-	$( "#product-info__more" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
-
+	//$( "#product-info__more" ).accordion( "option", "icons", { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" } );
 
 	
-	
-	$( function() {
+		$( function() {
     $( "#product-info__specs" ).accordion({
       collapsible: true,
 			heightStyle: "content",
@@ -76,9 +82,21 @@ $(document).ready(function(){
   });
   } );
 	
+	
+			$( function() {
+    $( "#product-info__more" ).accordion({
+      collapsible: true,
+			heightStyle: "content",
+			active: false
+    }).on("click", "h3.ui-accordion-header", function(e) {
+    $("h3.ui-accordion-header").each(function(i, el) {
+     $(this).find(".panel-icon").text($(el).is(".ui-state-active") ? "-" : "+")
+    })
+  });
+  } );
 
-	
-	
+
+
 
 		
 	console.log("end?")
