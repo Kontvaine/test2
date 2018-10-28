@@ -1,0 +1,45 @@
+section#contact-form
+	.grid
+		.row.row--no-gutter  
+			.col.md-6-12.md-push-left-3-12
+				h3 feedback
+		.row.row--no-gutter  
+			.col.md-6-12.md-push-left-3-12
+				form(method='POST', enctype='multipart/form-data')
+
+					.row.row--no-gutter 
+						.col.md-12-12
+							label(for='first-name') First name
+							input(type='text', name='name', placeholder='')
+
+							label(for='last-name') Last name
+							input(type='text', name='surname', placeholder='')
+
+							label(for='email') Email
+							input(type='email', name='email', placeholder='')
+
+							label(for='Subject') Subject
+							input(type='text', name='subject', placeholder='')
+
+
+
+
+					textarea( name='subject', placeholder='')
+
+					input.btn.btn--primary(type='submit', value='send message') 
+					
+					
+					
+//					
+//					form(method='POST', enctype='multipart/form-data')
+//  .name-and-email.flex
+//    .container-name.flex
+//      label(for='email')  Your name
+//      input#email(type='text', name='email', placeholder='')
+//    .container-name.flex
+//      label(for='email')  Your email
+//      input#email(type='text', name='email', placeholder='')
+//  .container-name.message.flex
+//    label(for='subject') Your message
+//    textarea#subject(rows='10', cols='50', name='subject')
+//  input(type='submit', value='Send message')
